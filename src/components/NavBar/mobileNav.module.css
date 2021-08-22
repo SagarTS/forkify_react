@@ -1,0 +1,83 @@
+.mobileNavContainer {
+  display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .mobileNavContainer {
+    z-index: 6;
+    display: flex;
+    color: white;
+    padding: 5px 12px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#f85032, #e4392a);
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .secondPart {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navIcon {
+    font-size: 20px;
+  }
+
+  .favouriteList > div {
+    line-height: 20px;
+  }
+
+  .notification {
+    top: 51px;
+    right: 0px;
+    z-index: 4;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .recipeWrapper {
+    gap: 15px;
+    display: flex;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 8px 12px;
+    position: relative;
+    align-items: flex-start;
+    transition: all 0.3s ease-in;
+    border-bottom: 1px solid rgba(233, 193, 112, 0.4);
+  }
+
+  .recipeWrapper > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recipeWrapper img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .closeIcon {
+    right: 5px;
+    z-index: 50;
+    color: grey;
+    font-size: 16px;
+    position: absolute;
+  }
+
+  .navIcon {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
